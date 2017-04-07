@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Visionary Repair</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='font-awesome-4.7.0/css/font-awesome.min.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static' , filename='css/animate.min.css') }}">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    
+        <script type="text/javascript">
+
+        function checker_info() {
+            var username = document.getElementById('name').value;
+            var password = document.getElementById('email').value;
+            var number = document.getElementById('number').value;
+            
+            
+            
+
+            if(name=="" || email=="" || number=="") {
+                alert('Please fill in all information')
+                return false;
+
+            }
+
+            else{
+
+                return true;
+
+            }
+
+
+        }
+
+    </script>
+
+  </head>
+
+  <body>
+    
+    <!--Navigation-->
+        <div id="NavBar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="#" class="navbar-brand">Vision Repair</a>
+
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#carousel-example-generic">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#pricing">Membership</a></li>
+                <li><a href="#team">Our Team</a></li>
+                <li><a href="#client">Product</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="report.html">Repair</a></li>
+            </ul>
+        </div>
+    </div>
+ </div>
+
+
+
+ <!--End of Navigation bar -->
+
+
+  <!--Start of header  -->
+
+  
+  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="{{ url_for ('static', filename='images/office1.jpg', alt='...') }}"}>
+      <div class="carousel-caption">
+        <h1>Welcome to Visionary Repair</h1>
+      </div>
+    </div>
+    <div class="item">
+      <img src="{{ url_for ('static', filename='images/office2.jpg', alt='...') }}"}>
+      <div class="carousel-caption">
+        ...
+      </div>
+    </div>
+        <div class="item">
+      <img src="{{ url_for ('static', filename='images/office3.jpg', alt='...') }}"}>
+      <div class="carousel-caption">
+        ...
+      </div>
+    
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+
+
+
+  <!-- End of header -->
+  <!-- Services-->
+    
+    <div id="services" class="services">
+        <div class="container">
+            <h2>Services</h2>
+            <p>At Vision repair, our aim is to fix any devices which have been damaged and get it back to you in no time!</p>
+            <div class="row">
+                <div class="col-lg-3 col-md-3 wow fadeInLeft" data-wow-delay="1.8s">
+                    <i class="fa fa-desktop" aria-hidden="true"></i>
+                    <h4>Desktop Repair</h4>
+                    <p>We repair desktops, no matter what make. From window running machines to Mac systems</p>
+                </div>
+                <div class="col-lg-3 col-md-3 wow fadeInLeft" data-wow-delay="1.4s">
+                    <i class="fa fa-mobile" aria-hidden="true"></i>
+                    <h4>Phone Repair</h4>
+                    <p>We also repair mobile phones, and also unlock them. </p>
+                </div>
+                <div class="col-lg-3 col-md-3 wow fadeInLeft" data-wow-delay="0.8s">
+                    <i class="fa fa-laptop" aria-hidden="true"></i>
+                    <h4>Laptop Repair</h4>
+                    <p>We also repair laptops, from hardware issues to software issues.</p>
+                </div>
+                <div class="col-lg-3 col-md-3 wow fadeInLeft" data-wow-delay="0.4s">
+                    <i class="fa fa-tablet" aria-hidden="true"></i>
+                    <h4>Tablet Repair</h4>
+                    <p>We also repair things such as tablets and also the kindle if you have any issues with them</p>
+                </div>
+            </div>           
+        </div>
+    </div>
+
+    <!--End of Services -->
+
+    <!--Membership -->
+
+    <div id="pricing" class="pricing">
+        <div class="container">
+            <div class="row">
+                <h2>Membership Pricing</h2>
+                <p>Here at Vision repair, we have a service which allows you to insure your device with us</p>
+                <div class="col-lg-3 col-md-3 wow flipInY" data-wow-delay="0.8s">
+                    <div class="packages">
+                        <h4>Silver</h4>
+                        <h1>£9.99</h1>
+                        <b>Monthly</b>
+                        <p>The Silver package is the first of our packages which has the least protection</p>
+                        <hr>
+                        <li>Water Damage</li>
+                        <li>Online Support</li>
+                        <li>Water Damage</li>
+                        <li>Water Damage</li>
+                        <button class="btn btn-success">Get Membership</button>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 wow flipInY" data-wow-delay="1.2s">
+                    <div class="packages">
+                        <h4>Gold</h4>
+                        <h1>£21.59</h1>
+                        <b>Monthly</b>
+                        <p>Gold membership is an amazing package which allows you not to miss your devices</p>
+                        <hr>
+                        <li>Water Damage</li>
+                        <li>Online Support</li>
+                        <li>House Visits</li>
+                        <li>Free Delivery</li>
+                        <button class="btn btn-success">Get Membership</button>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-3 wow flipInY"data-wow-delay="1.6s">
+                    <div class="packages">
+                        <h4>Pearl</h4>
+                        <h1>£49.99</h1>
+                        <b>Monthly</b>
+                        <p>With our unique pearl package we get everything done faster to make you happy</p>
+                        <hr>
+                        <li>First Class delivery</li>
+                        <li>Online Support</li>
+                        <li>Water Damage</li>
+                        <li>Replacement</li>
+                        <button class="btn btn-success">Get Membership</button>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-3 wow flipInY" data-wow-delay="2s">
+                    <div class="packages">
+                        <h4>Diamond</h4>
+                        <h1>£99.99</h1>
+                        <b>Monthly</b>
+                        <p>This Diamond package is for the business travelling time with international coverage</p>
+                        <hr>
+                        <li>Permenant Replacement</li>
+                        <li>24 hours Fix</li>
+                        <li>Same day delviery </li>
+                        <li>International</li>
+                        <button class="btn btn-success">Get Membership</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Pricing End -->
+
+    <!-- Our Members on job -->
+
+    <div id="team" class="team">
+        <div class="container"> 
+            <div class="row">
+                <h2>Here's our team</h2>
+                <p>This is our team managers which will help you through your entire process</p>
+                <div class="col-lg-3 col-md-3  wow fadeInLeft" data-wow-delay="2s">
+                    <img src="{{ url_for ('static', filename='images/team/Tim.jpg',class="img-circle", alt='...') }}"}>
+                    <h4>Tim Matthew</h4>
+                    <b>CEO</b>
+                    <p>Runs the entire vision repair, makes sure everything is in place.</p>
+                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </div>
+
+                <div class="col-lg-3 col-md-3 wow fadeInLeft" data-wow-delay="1.6s">
+                    <img src="{{ url_for ('static', filename='images/team/Jamal.jpg',class="img-circle", alt='...') }}"}>
+                    <h4>Kevin Jackson</h4>
+                    <b>Hardware Repair</b>
+                    <p>His the guy responsible for all the hardware issues send to us</p>
+                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </div>
+
+                <div class="col-lg-3 col-md-3 wow fadeInLeft" data-wow-delay="1.2s">
+                    <img src="{{ url_for ('static', filename='images/team/Julie.jpg',class="img-circle", alt='...') }}"}>
+                    <h4>Julie Smith</h4>
+                    <b>Business Manager</b>
+                    <p>She handles your payments and all you queires from membership and repair date due.</p>
+                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </div>
+
+                <div class="col-lg-3 col-md-3 wow fadeInLeft" data-wow-delay="0.8s">
+                    <img src="{{ url_for ('static', filename='images/team/Jai.jpg',class="img-circle", alt='...') }}"}>
+                    <h4>John Spencer</h4>
+                    <b>Software Engineer</b>
+                    <p>He repairs all the internal problems on the system in no time.</p>
+                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- This is end team -->
+
+    <!-- Product -->
+
+        <div id="client" class="client">
+            <div class="container">
+                <div class="row">
+                    <h2>In Partnership with</h2>
+                    <p>We are in partnership and sponsor these specific companies on our website, if you become a member of vision repair you get deals with the companies below.</p>
+                    <div class="col-lg-3 col-md-3 wow fadeInLeft" data-wow-delay="2s">
+                        <ul><img src="{{ url_for ('static', filename='images/Partnership/spotify.png', alt='...') }}"}></ul>
+                    </div>
+                    <div class="col-lg-3 col-md-3 wow fadeInLeft" data-wow-delay="1.6s">
+                        <ul><img src="{{ url_for ('static', filename='images/Partnership/hp.png', alt='...') }}"}></ul>
+                    </div>
+                    <div class="col-lg-3 col-md-3 wow fadeInLeft" data-wow-delay="1.2s">
+                        <ul><img src="{{ url_for ('static', filename='images/Partnership/chrome.png', alt='...') }}"}></ul>
+                    </div>
+                    <div class="col-lg-3 col-md-3 wow fadeInLeft" data-wow-delay="0.8s">
+                        <ul><img src="{{ url_for ('static', filename='images/Partnership/android.png', alt='...') }}"}></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- End of Product -->
+
+        <!--- Contacts -->
+
+    <form onsubmit="return checker_info();">
+        <div id="contact" class="contact">
+            <div class="container">
+                <div class="row">
+                    <h2>Contact</h2>
+                    <p>Do not hesitate to contact us if you have any problems with our system or even if you want to us about your repair enquiries</p>
+                
+                    <div class="col-lg-6 col-md-6">
+                        <div class="input-group input-group-lg wow fadeInUp" data-wow-delay="0.8s">
+                            <span class="input-group-addon" id="sizing-addon1"><i class="fa fa-user" aria-hidden="true"></i></span>
+                            <input type="text" class="form-control" aria-describedby="sizing-addon1" placeholder="Full Name" name="Name" id=name>
+                        </div>
+
+                        <div class="input-group input-group-lg wow fadeInUp" data-wow-delay="1.2s"> 
+                            <span class="input-group-addon" id="sizing-addon1"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                            <input type="text" class="form-control" aria-describedby="sizing-addon1" placeholder="Email Address" name="Email" id="email">
+                        </div>
+                        
+                        <div class="input-group input-group-lg wow fadeInUp" data-wow-delay="1.6s">
+                            <span class="input-group-addon" id="sizing-addon1"><i class="fa fa-phone" aria-hidden="true"></i></span>
+                            <input type="text" class="form-control" aria-describedby="sizing-addon1" placeholder="Phone Number" name="Number" id="number">
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-6 col-md-6">
+                        <div class="input-group wow fadeInUp" data-wow-delay="2s">
+                            <textarea name="" id="" cols="80" rows="6" class="form-control"></textarea>
+                        </div>
+                        <button class="btn btn-lg wow fadeInUp" data-wow-delay="2.4s">Sumbit Problem Report</button> 
+                    </div>
+                
+            </div>
+        </div>
+        </div>
+    </form> 
+
+        <!--End of contact form -->
+
+        <!--footer-->
+
+        <div id="footer" class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4">
+                        <h4>Contact Us</h4>
+                        <p><i class="fa fa-home" aria-hidden="true"></i>123 Whitemoore Road, Birmingham, B10 5GH</p>
+                        <p><i class="fa fa-envelope" aria-hidden="true"></i>Ogleogle132@hotmail.co.uk</p>
+                        <p><i class="fa fa-phone" aria-hidden="true"></i>07857483807</p>
+                        <p><i class="fa fa-phone" aria-hidden="true"></i>www.visonaryrepair.co.uk</p>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4">
+                        <h4>About</h4>
+                        <p><i class="fa fa-square-o" aria-hidden="true"></i>About Us</p>
+                        <p><i class="fa fa-square-o" aria-hidden="true"></i>Privacy</p>
+                        <p><i class="fa fa-square-o" aria-hidden="true"></i>Term & Condition</p>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-4">
+                        <h4>Don't lose touch</h4>
+                        <i class="social fa fa-facebook" aria-hidden="true"></i>
+                        <i class="social fa fa-twitter" aria-hidden="true"></i>
+                        <i class="social fa fa-instagram" aria-hidden="true"></i>
+                        <i class="social fa fa-linkedin" aria-hidden="true"></i>
+                        <i class="social fa fa-youtube" aria-hidden="true"></i>
+                        <i class="social fa fa-github" aria-hidden="true"></i><br>
+                        <input type="email" placeholder="Subcribe to Keep Up"><button class="btn btn-success">Subcribe</button>
+                        
+                    </div>
+                </div>
+                {%block content%}{%endblock%}
+            </div>
+        </div>
+
+
+
+
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+    </script>
+
+    <script src="js/bootstrap.min.js"></script>
+
+
+  </body>
+
+</html>
